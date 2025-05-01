@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Involved</title>
     <style>
-      /* General Styles */
       body {
         font-family: 'Verdana', sans-serif;
         margin: 0;
@@ -84,6 +83,38 @@
         font-size: 30px;
         color: white;
         cursor: pointer;
+      }
+
+      /* Involvement Box Styling */
+      .involve-box {
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #Para1 {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .donate-button {
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      .donate-button:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.6);
       }
 
       /* Form Container Styles */
@@ -186,7 +217,7 @@
     </header>
 
     <nav class="navbar">
-      <div class="logo">CHARITY & FUNDRAISING</div>
+      <div class="logo">MENU</div>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul id="navLinks">
         <li><a href="index.html">HOME</a></li>
@@ -201,25 +232,26 @@
       <h2>GET INVOLVED</h2>
       <hr />
 
-      <ul>
-        <li>
-          <div id="Para1">Volunteers:</div>
-          <p>Join our dedicated team to support our initiatives.</p>
-        </li>
-        <br />
-        <li>
-          <div id="Para1">Donate:</div>
-          <p>Your contributions directly fund our campaigns—every bit helps!</p>
-          <a href="donate.html" target="_blank">
-            <button>Donate Now</button>
-          </a>
-        </li>
-        <br />
-        <li>
-          <div id="Para1">Partner with Us:</div>
-          <p>Collaborate on impactful projects that align with our mission.</p>
-        </li>
-      </ul>
+    
+      <div class="involve-box">
+        <img src="volunteer.jpeg" alt="Education Campaign" width="100%" style="max-width: 600px; display: block; margin: 10px auto;">
+        <div id="Para1">Volunteers:</div>
+        <p>Join our dedicated team to support our initiatives.</p>
+      </div>
+      
+      <div class="involve-box">
+        <div id="Para1">Donate:</div>
+        <p>Your contributions directly fund our campaigns—every bit helps!</p>
+        <a href="donate.html" target="_blank">
+          <button class="donate-button">Donate Now</button>
+        </a>
+      </div>
+      
+      <div class="involve-box">
+        <div id="Para1">Partner with Us:</div>
+        <p>Collaborate on impactful projects that align with our mission.</p>
+      </div>
+      
 
       <hr />
 
@@ -269,7 +301,7 @@
       }
 
       function validateVolunteerForm() {
-        // Form validation logic here (optional)
+        // You can add real validation here
         return true;
       }
     </script>
